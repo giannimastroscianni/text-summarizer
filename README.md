@@ -16,7 +16,7 @@ I post here two link to download a english model and an italian model:
 Download a model.bin a place it in the main project directory. Rename it "model".
 
 The project is set up to work on italian text and italian model. The model strongly influence the configuration of the framework because we need to process the text to summarize with the same pipeline that was processed the corpus used for model's training.
-So, if you want to use english model, when summarizer is created (in this work is istantiated in the REST service [summarizer_restful/views.py](https://github.com/giannimastroscianni/text-summarizer/blob/master/summarizer_restful/views.py) set the constructor's argument ```remove_stopword``` to ```True```.
+So, if you want to use english model, when summarizer is created (in this work is istantiated in the REST service [summarizer_restful/views.py](https://github.com/giannimastroscianni/text-summarizer/blob/master/summarizer_restful/views.py)) set the constructor's argument ```remove_stopword``` to ```True```.
 
 ## Run
 To run this framework just move with your terminal in the project directory and type (you need python installed and all the dependencies in the [requirements file](https://github.com/giannimastroscianni/text-summarizer/blob/master/requirements.txt)) ```python manage.py runserver 8001```.
